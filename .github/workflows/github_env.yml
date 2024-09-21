@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Variaveis de Ambiente
-        run: echo "Deploying to production server on branch $GITHUB_REF"
+        run: echo "Deploying to production server on branch ${{ secrets.GITHUB_TOKEN }}"
