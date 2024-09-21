@@ -1,9 +1,6 @@
 name: Transferência entre Jobs
 
 on:
-  push:
-    branches: [ "develop" ]
-
   workflow_dispatch: 
 
 jobs:
