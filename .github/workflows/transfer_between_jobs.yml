@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
         - run: echo "Arquivo criado pelo $Job_Name" > file.txt
+          env:
+            Job_Name: "Primeiro Job do Workflow"
         - uses: actions/upload-artifact@v4
           with:
             name: file
             path: file.txt
-          env:
-            Job_Name: "Primeiro Job do Workflow"
 
   job_2:
     name: Lendo o Arquivo
