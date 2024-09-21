@@ -19,4 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Variaveis de Ambiente
-        run: echo "Deploying to production server on branch ${{ secrets.GITHUB_TOKEN }}"
+        run: echo "Bem vindo ao Deploy, $First_Name!"
+        env:
+          First_Name: "Murilo Bernardes de Oliveira"
